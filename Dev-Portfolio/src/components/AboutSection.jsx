@@ -10,6 +10,7 @@ import "/src/index.css";
  * @example
  * return (
  *   <AboutSection />
+ * 
  * )
  */
 const AboutSection = () => {
