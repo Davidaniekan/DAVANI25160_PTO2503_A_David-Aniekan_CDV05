@@ -1,0 +1,298 @@
+.contact-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+  margin-top: 15px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-subtitle {
+  font-size: 1.0625rem;
+  color: #a8bfb0;
+}
+
+/* FORM */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  color: #e0efe2;
+  font-size: 0.95rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.9rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  color: white;
+  font-size: 0.95rem;
+  outline: none;
+  transition: 0.3s ease;
+  margin-top: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #3ec96a;
+}
+
+.contact-btn {
+  margin-top: 0.5rem;
+  padding: 0.9rem 0;
+  background: #0f5525;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #226b2e;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #e8f5e9;
+  font-weight: 600;
+}
+
+.contact-info p {
+  color: #a8bfb0;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.contact-location {
+  display: inline-flex;
+  gap: 0.6rem;
+}
+
+.contact-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-location p {
+  color: #7ef28a;
+  margin-bottom: 0.8rem;
+}
+
+.contact-details a {
+  color: #7ef28a;
+  text-decoration: none;
+}
+
+/* Socials */
+.contact-socials h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #e8f5e9;
+  font-weight: 600;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+/* ============================================
+   CONTACT — MOBILE RESPONSIVE ADJUSTMENTS
+   ============================================ */
+@media (max-width: 700px) {
+  .contact-flex {
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 10px;
+  }
+
+  .contact-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+  }
+
+  /* Form adjustments */
+  .contact-form label {
+    font-size: 0.85rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.75rem;
+    font-size: 0.88rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .contact-btn {
+    padding: 0.75rem 0;
+    font-size: 0.9rem;
+  }
+
+  /* Contact Info */
+  .contact-info {
+    text-align: left;
+  }
+
+  .contact-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .contact-info p {
+    font-size: 0.9rem;
+    line-height: 1.45rem;
+  }
+
+  /* Contact details */
+  .contact-details {
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-email,
+  .contact-location {
+    gap: 0.5rem;
+  }
+
+  .contact-logo {
+    width: 18px;
+    height: 18px;
+  }
+
+  .contact-details a,
+  .contact-location p {
+    font-size: 0.88rem;
+  }
+
+  /* Socials */
+  .contact-socials h4 {
+    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .social-links {
+    gap: 0.8rem;
+  }
+
+  .contact-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* ============================================
+   CONTACT — MEDIUM SCREENS (701px–1200px)
+   ============================================ */
+@media (min-width: 701px) and (max-width: 1200px) {
+  /* Flex container */
+  .contact-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+    margin-top: 12px;
+  }
+
+  /* Subtitle */
+  .contact-subtitle {
+    font-size: 1rem;
+    line-height: 1.45rem;
+  }
+
+  /* Form adjustments */
+  .contact-form label {
+    font-size: 0.9rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.85rem;
+    font-size: 0.92rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-btn {
+    padding: 0.85rem 0;
+    font-size: 0.95rem;
+  }
+
+  /* Contact Info */
+  .contact-info {
+    text-align: left;
+  }
+
+  .contact-info h3 {
+    font-size: 1.45rem;
+  }
+
+  .contact-info p {
+    font-size: 0.95rem;
+    line-height: 1.45rem;
+  }
+
+  /* Contact details */
+  .contact-details {
+    gap: 0.5rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .contact-email,
+  .contact-location {
+    gap: 0.55rem;
+  }
+
+  .contact-logo {
+    width: 19px;
+    height: 19px;
+  }
+
+  .contact-details a,
+  .contact-location p {
+    font-size: 0.9rem;
+  }
+
+  /* Socials */
+  .contact-socials h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.45rem;
+  }
+
+  .social-links {
+    gap: 0.9rem;
+  }
+
+  .contact-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
