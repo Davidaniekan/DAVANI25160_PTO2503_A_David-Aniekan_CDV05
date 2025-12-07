@@ -1,0 +1,165 @@
+/* === SKILLS SECTION === */
+/* Container */
+.skills-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 16px;
+}
+
+#skills-marquee {
+  margin-top: 25px;
+}
+
+/* Track (the moving row) */
+.marquee-track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  align-items: center;
+  animation-play-state: running;
+}
+
+/* LEFT → RIGHT */
+.left-scroll {
+  animation: scroll-left 22s linear infinite;
+}
+
+/* RIGHT → LEFT */
+.right-scroll {
+  animation: scroll-right 22s linear infinite;
+}
+
+/* Pause the animation for the hovered row only */
+.skills-marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Speed & Direction */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Skill item */
+.skill-marquee-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 15px 25px;
+  background: rgba(10, 20, 15, 0.55);
+  border: 1px solid rgba(29, 79, 52, 0.4);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  min-width: 140px;
+}
+
+/* Icons */
+.skill-marquee-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Name */
+.skill-marquee-item span {
+  font-size: 16px;
+  color: #d8ffe9;
+}
+
+/* ============================================
+   SKILLS SECTION — MOBILE RESPONSIVE ADJUSTMENTS
+   ============================================ */
+@media (max-width: 700px) {
+  .skills-title {
+    font-size: 1.9rem;
+  }
+
+  .skills-marquee {
+    margin-top: 10px;
+  }
+
+  #skills-marquee {
+    margin-top: 18px;
+  }
+
+  .skill-marquee-item {
+    padding: 10px 18px;
+    min-width: 110px;
+    border-radius: 6px;
+  }
+
+  .skill-marquee-item img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .skill-marquee-item span {
+    font-size: 14px;
+  }
+
+  .marquee-track {
+    gap: 1.2rem;
+  }
+
+  .left-scroll,
+  .right-scroll {
+    animation-duration: 30s;
+  }
+}
+
+/* ============================================
+   SKILLS SECTION — MEDIUM SCREENS (TABLETS / SMALL LAPTOPS)
+   ============================================ */
+@media (min-width: 701px) and (max-width: 1200px) {
+  .skills-marquee {
+    margin-top: 14px;
+  }
+
+  #skills-marquee {
+    margin-top: 22px;
+  }
+
+  /* Track spacing */
+  .marquee-track {
+    gap: 1.6rem;
+  }
+
+  /* Slightly slower animation for medium screens */
+  .left-scroll,
+  .right-scroll {
+    animation-duration: 26s;
+  }
+
+  /* Skill card */
+  .skill-marquee-item {
+    padding: 12px 22px;
+    min-width: 125px;
+    border-radius: 7px;
+  }
+
+  /* Icons */
+  .skill-marquee-item img {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* Text size */
+  .skill-marquee-item span {
+    font-size: 15px;
+  }
+}
