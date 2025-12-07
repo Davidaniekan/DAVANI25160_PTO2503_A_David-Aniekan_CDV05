@@ -1,0 +1,160 @@
+/* Footer Styles */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 18px 100px;
+  background: #0e0f0e;
+  border-top: 1px solid #2a2f2a;
+}
+
+/* Left side wrapper */
+.footer-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ROTATING LOGO ANIMATION */
+#da-logo.spin-logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* COLOR-CHANGING NAME EFFECT */
+.animated-name {
+  font-size: 22px;
+  font-weight: 600;
+  animation: colorShift 5s ease-in-out infinite;
+}
+
+@keyframes colorShift {
+  0% {
+    color: #0c8436;
+  }
+  25% {
+    color: #6edc8d;
+  }
+  50% {
+    color: #21ff8f;
+  }
+  75% {
+    color: #a8bfb0;
+  }
+  100% {
+    color: #0c8436;
+  }
+}
+
+/* Small role text */
+.f-role {
+  color: #a8bfb0;
+  margin-top: -5px;
+  font-size: 0.875rem;
+}
+
+/* Copyright text */
+.copyright {
+  color: #a8bfb0;
+  font-size: 15px;
+}
+
+
+/* ============================
+   Small Screen Footer Styles
+   ============================ */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 20px;
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  #da-logo.spin-logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .animated-name {
+    font-size: 18px;
+  }
+
+  .f-role {
+    font-size: 0.8rem;
+    margin-top: -2px;
+  }
+
+  .copyright {
+    font-size: 13px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  #da-logo.spin-logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .animated-name {
+    font-size: 16px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}
+
+/* ============================================
+   FOOTER — MEDIUM SCREENS (701px–1200px)
+   ============================================ */
+@media (min-width: 701px) and (max-width: 1200px) {
+  footer {
+    padding: 18px 50px; 
+    gap: 1rem;
+  }
+
+  .footer-content {
+    gap: 0.8rem; 
+  }
+
+  #da-logo.spin-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .animated-name {
+    font-size: 20px;
+  }
+
+  .f-role {
+    font-size: 0.85rem;
+    margin-top: -3px;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+}
