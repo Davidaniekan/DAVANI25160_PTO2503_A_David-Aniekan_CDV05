@@ -12,6 +12,7 @@ import "/src/index.css";
  *   <AboutSection />
  * )
  */
+
 const AboutSection = () => {
   return (
     <section id="about" className="about-section">
