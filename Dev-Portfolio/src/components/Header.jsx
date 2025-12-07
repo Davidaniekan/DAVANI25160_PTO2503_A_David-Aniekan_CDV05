@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+
 /**
  * Header component renders the website's top navigation including logo, desktop navigation,
  * and mobile hamburger menu. It also highlights the currently active section using
